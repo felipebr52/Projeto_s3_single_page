@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+#inicio {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    justify-content: center; 
+    padding: 40px 0; 
+}
+
+#inicio img {
+    max-width: 80%; 
+    height: auto;
+    
+    margin-bottom: 20px; 
+}
+.carrosel-bio {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 5% 20px 5%;
+    scroll-snap-type: x mandatory;
+}
+
+#personagens {
+  padding: 100px 0; 
+  overflow-x: auto;
+}
+
+
+#personagens h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 auto 40px auto;
+    color: var(--cor-neon-azul);
+    padding: 0 5%; 
+}
+#historia div, #producao div,#personagens div, #galeria div, #inicio div{
+    background-color: rgba(10, 15, 20, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card-bio {
+    flex: 0 0 280px;
+    background-color: rgb(13, 26, 43);
+    border: 1px solid rgba(0, 191, 255, 0.2);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+    
+}
+.card-bio h3{
+    color: #2c5488;
+}
+.card-bio p{
+    color: white;
+}
+.img-patriots{
+   background-color: white;
+}
+.card-bio img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+:root {
+    
+    --cor-fundo: #c1d1e2;
+
+    
+    --cor-texto-comum: #2f4869;
+
+    
+    --cor-neon-azul: #0182ad; 
+
+    --cor-neon-brilho: rgba(0, 191, 255, 0.7);
+}
+.texto-neon {
+    color: #608999;
+    font-weight: bold;
+    text-shadow:
+        0 0 2px #bad7e6,
+        0 0 5px #a8d7f1,
+        0 0 10px var(--cor-neon-azul),
+        0 0 16px var(--cor-neon-azul),
+        0 0 15px var(--cor-neon-brilho);
+}
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 15px 5%; 
+    background-color: rgba(10, 15, 20, 0.8);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 191, 255, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 15px 5%;
+
+
+
+    z-index: 1000;
+}
+h1.titulo {
+    font-size:1.3rem;
+    padding-left: 20px;
+    color: var(--cor-neon-azul);
+    
+}
+
+.logo {
+    height: 60px; 
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.menu li {
+    margin-left: 30px; 
+}
+
+.menu a {
+    color: var(--cor-texto-comum);
+    text-decoration: none;
+    font-size: 1rem;
+    padding-bottom: 5px; 
+    border-bottom: 2px solid transparent; 
+    transition: all 0.3s ease;
+}
+.menu a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px var(--cor-neon-brilho);
+    border-bottom-color: var(--cor-neon-azul);
+}
+.conteudo-principal {
+
+    padding-top: 80px; 
+}
+section{
+    background-color: #2f486987;
+}
+
+body {
+    background: url('../imagens/quimicomgs2.png') center center / cover no-repeat fixed;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-comum);
+    line-height: 1.6;
+    padding: 20px;
+    
+    background-image:
+        url('../imagens/scanlines.png'),
+        url('../imagens/bigshell.webp');
+    
+}
+
+section {
+    min-height: 100vh;
+    padding: 60px 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    border-bottom: 1px solid rgba(160, 200, 224, 0.1);
+
+    max-width: 850px; 
+    margin: 0 auto; 
+}
+em{
+    color: var(--cor-neon-azul);
+}
+.container-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px;
+}
+.container-galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 191, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+.container-galeria img:hover {
+    transform: scale(1.05);
+}
+
+
+
+#contato p {
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+.formulario-contato {
+    width: 100%;
+    max-width: 600px;
+}
+.campo-form {
+    margin-bottom: 20px;
+}
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(10, 15, 20, 0.7);
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    color: var(--cor-texto-comum);
+    font-family: inherit;
+    font-size: 1rem;
+}
+.botao-enviar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-neon-azul);
+    background-color: transparent;
+    color: var(--cor-neon-azul);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.botao-enviar:hover {
+    background-color: var(--cor-neon-azul);
+    color: var(--cor-fundo);
+    box-shadow: 0 0 20px var(--cor-neon-brilho);
+}
